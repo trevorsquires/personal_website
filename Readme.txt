@@ -1,6 +1,3 @@
-Thanks for downloading this template!
+A simple website built off of the boostrap template: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
 
-Template Name: Kelly
-Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Check it out: trevorsquires.com
