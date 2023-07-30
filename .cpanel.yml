@@ -2,9 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp about.html $DEPLOYPATH
-    - /bin/cp content.html $DEPLOYPATH
-    - /bin/cp resume.html $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R subpages $DEPLOYPATH
+    - cp index.html $DEPLOYPATH
