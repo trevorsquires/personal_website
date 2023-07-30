@@ -3,3 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/trevakcd/public_html/
     - cp -r * $DEPLOYPATH
+    - cp -r subpages $DEPLOYPATH
+    - cp -r assets $DEPLOYPATH
