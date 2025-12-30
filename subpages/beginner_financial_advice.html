@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Writing Template</title>
+  <meta content="Drop-in template for publishing a Markdown-based writing on this site." name="description">
+  <meta content="writing, markdown, article, template" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <style>
+    /* Minimal Markdown-friendly defaults for the writing area */
+    .markdown-body {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #2c2c2c;
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5,
+    .markdown-body h6 {
+      font-weight: 700;
+      margin-top: 1.8rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .markdown-body p {
+      margin-bottom: 1.1rem;
+    }
+
+    .markdown-body a {
+      color: #106eea;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(16, 110, 234, 0.25);
+    }
+
+    .markdown-body a:hover {
+      color: #0a4ca3;
+      border-bottom-color: rgba(10, 76, 163, 0.35);
+    }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .markdown-body blockquote {
+      border-left: 4px solid #e0e6ed;
+      padding-left: 1rem;
+      color: #555;
+      margin: 1.4rem 0;
+    }
+
+    .markdown-body code {
+      background: #f4f6f9;
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    .markdown-body pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1.2rem 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+          <li><a href="../content.html">Content</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <a href="https://github.com/trevorsquires" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/trevor-squires-734625116/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:trevorsquires9@gmail.com"><i class="bi bi-mailbox"></i></a>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main id="main" class="detail-page">
+    <section class="detail-hero" data-aos="fade-up">
+      <div class="container">
+        <div class="detail-top-row">
+          <a class="detail-back" href="../content.html"><i class="bi bi-arrow-left"></i><span>Back to Content</span></a>
+        </div>
+        <h1>Writing Title</h1>
+        <p class="detail-lede">A short subtitle or teaser for the writing. Replace this text with your own.</p>
+      </div>
+    </section>
+
+    <section class="detail-body">
+      <div class="container">
+        <div class="row justify-content-center gy-4">
+          <div class="col-lg-10 col-xl-9" data-aos="fade-up">
+            <div class="detail-card">
+              <div id="markdown-target" class="markdown-body">
+                <!-- Markdown content will be rendered here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Markdown renderer -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    // Replace the markdownSource string with your writing in Markdown.
+    const markdownSource = `
+
+# Introduction
+
+As of the time of this writing, the cost of living relative to median income is near all-time highs. Some surveys estimate that nearly 70% of Americans live paycheck to paycheck. Consumer confidence is falling, inflation has driven prices up in recent years, and wages have not kept pace. You are free to form your own opinions about how this happened or what should be done about it, but in the meantime, it is the environment we have to operate within.
+
+Tighter financial margins leave less room for passive or accidental success. Gone are the days when many people could stumble into a comfortable retirement without much intentional planning. Achieving long-term financial stability today requires more care in how each dollar is used.
+
+This document is not going to solve every financial problem. It is also not a promise of perfect optimization. Personal finance is personal, and no short guide can account for every situation, goal, or risk preference. The goal here is simpler and more practical: to help you put together your first real financial plan, and to understand why it makes sense.
+
+To do that, we take a first-principles approach to personal finance. We start by being clear about what we actually want our money to do for us. Then we look at the financial tools available, the constraints they come with, and the tradeoffs involved. From there, we arrive at a strategy that is simple, defensible, and realistic to follow without constant attention.
+
+You do not need excess capital, insider knowledge, or perfect timing to benefit from this guide. This is not a shortcut, a scheme, or a system designed to sell you the next step. It is meant to be a concrete starting point, one that helps you make informed, reasonable decisions about your money and understand why those decisions work.
+
+---
+
+# Mental Model
+
+Before diving into specific accounts or investments, it helps to be clear about what problem we’re actually trying to solve.
+
+Most people want to be financially independent one day. What’s changed in recent years is that this no longer happens automatically. Rising costs and tighter margins mean that if you want to retire comfortably, you have to be a bit more intentional about what you do with the money you don’t immediately need. Answering those questions is the purpose of this guide.
+
+We’re not going to talk about how to earn more money or how to cut spending to free up cash. Those are important topics and I encourage everyone to give serious consideration to them, but they’re separate conversations. Here, we’ll assume you already have some surplus, even a small one, and ask a simpler question:
+
+**What should you do with the money you don’t need right now?**
+
+To answer that, we need a way to judge whether one choice is better than another.
+
+---
+
+## What Does a “Good” Financial Decision Look Like?
+
+Every dollar you set aside comes with tradeoffs. To keep things simple, we’ve selected four common-sense considerations that apply to every financial decision and have significant ramifications.
+
+### 1. Expected Return
+
+The most obvious question is: what do I get back for committing this money?
+
+If you invest $1,000, you expect that money to grow over time. Some options grow slowly, others faster. All else equal, earning more is better than earning less. Expected return, how much money you reasonably expect to make, is something we always care about.
+
+### 2. Risk
+
+Return doesn’t come free. Some investments grow steadily. Others swing wildly, up some years, down others. Two investments might have similar average returns, but very different experiences along the way.
+
+For example:
+
+- Investment A reliably earns about 7% every year  
+- Investment B averages 10%, but could be down 10% one year and up 30% the next  
+
+Even though Investment B has the higher average return, many people would still prefer A. This highlights the importance of risk considerations. A good financial plan takes this seriously.
+
+### 3. Liquidity
+
+Liquidity answers a simple question: how easily can you use your money if you need it?
+
+Consider two people:
+
+- Person A owns a $1 million house and has $10 in their bank account  
+- Person B owns a $500,000 house and has $70,000 in cash  
+
+Person A has a higher net worth, but Person B can pay rent, fix a car, or handle an emergency tomorrow. This is an extreme example, but it highlights an important point. Money that’s hard to access doesn’t help much in the moment. Any realistic plan needs some flexibility.
+
+### 4. Taxes
+
+Finally, we have to consider taxes. The government strongly encourages people to save for retirement, because it’s better for everyone if retirees can support themselves. To make that happen, certain financial accounts come with tax advantages.
+
+This matters because sometimes a lower-return investment can actually leave you better off after taxes than a higher-return one.
+
+For example:
+
+- Asset A earns $15,000 per year, fully taxable  
+- Asset B earns $10,000 per year, but also reduces your taxes by $10,000  
+
+Even though Asset A earns more on paper, Asset B leaves you with more money overall.
+
+---
+
+These are the four pillars of our mental model. Every financial decision can and will be evaluated using these four ideas:
+
+- **Expected return** – how much you make  
+- **Risk** – how uncertain that outcome is  
+- **Liquidity** – how accessible the money is  
+- **Taxes** – how much you keep  
+
+There’s no single correct balance between them. Different people will weigh them differently. But no solid plan ignores any of them entirely.
+
+From here on out, we’ll look at common financial tools through this lens:
+
+- **Accounts** – where your money can live  
+- **Investments** – how your money can grow  
+- **Debt** – when it helps and when it hurts  
+
+Finally, we’ll put everything together into a simple, practical playbook that shows how these ideas work in real life.
+
+---
+
+# Financial Accounts
+
+Before talking about specific investments, we need to talk about financial accounts.
+
+Financial accounts are simply places where your money lives. They often allow that money to be invested, but they do not dictate what you invest in. That distinction matters, because accounts and investments are often lumped together even though they do very different jobs.
+
+Here’s the framing we’ll use throughout this guide:
+
+- **Financial accounts set the rules for your money**
+- **Investments determine how that money grows**
+
+Those rules mostly show up in two places: taxes and liquidity.
+
+Some rules come from the type of account you’re using, like a 401(k) versus an IRA. Others come from the tax treatment applied to that account, traditional versus Roth. These are related ideas, but they are not the same thing.
+
+An account decides when you pay taxes and when you can reasonably access your money. It does not decide how fast your money grows or how risky that growth is. You can hold the exact same investment in different accounts and end up with very different outcomes simply because the rules are different.
+
+With that in mind, let’s look at the most common examples.
+
+---
+
+## Brokerage Account (Taxable Investment Account)
+
+A brokerage account is the most flexible place your money can live. This account exists to let you invest money without restrictions. You can add money when you want, take it out when you want, and invest it however you choose. This makes it extremely liquid. The downside is that there are no special tax benefits.
+
+You pay taxes on dividends and on any gains when you sell investments. Long-term investments are often taxed more favorably than short-term ones, but taxes are unavoidable here.
+
+The primary draw of a brokerage account is for excess money that you need to hold for non-retirement purposes. Retirement-specific accounts are often better at maximizing your net worth at retirement, but life still happens before then. If you need meaningful sums of money available pre-retirement, a brokerage account is usually the preferred location.
+
+---
+
+## High-Yield Savings Account (HYSA)
+
+A high-yield savings account is your standard savings account with a better interest rate. This account exists to hold cash safely while earning some interest. It offers no tax benefits, but has the highest liquidity of any account.
+
+Functionally, HYSAs are designed for short-term savings and emergency funds. These funds are meant to sit somewhere boring, and an HYSA is precisely that place.
+
+It’s included here to provide a baseline for the investment section. A HYSA typically offers a modest, relatively stable return that tracks prevailing interest rates. Any investment should be mentally compared against this baseline.
+
+---
+
+## 401(k) (Workplace Retirement Account)
+
+A poorly named account, the 401(k) is an employer-sponsored retirement account. The name comes from the section of the tax code that allows it to exist.
+
+The goal of a 401(k) is to help people save for retirement automatically. Contributions usually come directly out of your paycheck, which makes them easy to stick with.
+
+The main benefit of an employer-sponsored 401(k) is the employer match. Many employers will match a portion of your contributions, often capped between 2% and 10% of your salary. This is effectively free money and a major advantage of the account.
+
+Another benefit is tax treatment. Most 401(k) contributions are made before taxes, lowering your taxable income today. You pay taxes later in retirement. At a high level, this functions like a tax discount compared to a brokerage account.
+
+Pre-retirement liquidity is low. Withdrawing before age 59.5 is difficult and usually comes with penalties. After that age, the account functions as intended.
+
+401(k)s also have annual contribution limits. These are relatively high, but may matter for higher earners. Investment options may be limited by the employer plan, though this is usually not a major issue.
+
+The 401(k) is the intended path toward retirement, but it is often best supplemented with other accounts.
+
+---
+
+## IRA (Individual Retirement Account)
+
+An IRA is a retirement account you control directly. It is not tied to your employer.
+
+The purpose is the same as a 401(k), but with more control and flexibility. You choose the provider and investments.
+
+IRAs have much lower contribution limits than 401(k)s. Many people will actually hit these limits, especially early in their career.
+
+Liquidity is still limited, but IRAs are generally simpler and more flexible than employer plans. There is no employer match, which makes IRAs more of a supplement or replacement for a 401(k), often in cases of self-employment.
+
+---
+
+## Roth vs Traditional (Tax Treatment)
+
+Within IRAs and 401(k)s, there is another distinction: Roth vs traditional. These describe when your money is taxed.
+
+- **Traditional** – taxed later, contributions reduce income today  
+- **Roth** – taxed now, withdrawals are tax-free later  
+
+This choice comes down to timing. Younger investors may benefit from Roth accounts due to tax-free growth. Traditional accounts can be easier to fund due to upfront tax savings.
+
+Roth accounts also offer more flexibility with contributions, while traditional accounts defer taxes.
+
+Neither option is universally better. The underlying account determines limits and liquidity. Roth vs traditional only changes tax timing.
+
+---
+
+## Summary Table
+
+| Account Type | Primary Purpose | Tax Treatment | Liquidity | Contribution Limits |
+|-------------|----------------|---------------|-----------|---------------------|
+| Brokerage Account | Flexible, non-retirement investing | Taxed on dividends and gains | Very high | None |
+| HYSA | Short-term savings and emergencies | Interest taxed as income | Very high | None |
+| 401(k) | Employer-sponsored retirement | Traditional or Roth | Low | High |
+| IRA | Individual retirement | Traditional or Roth | Low to moderate | Low |
+
+---
+
+
+## Investment Assets
+
+Now that we’ve talked about financial accounts, we can talk about investment assets.
+
+If accounts determine the rules your money has to follow, investments determine what your money actually does while it’s there. This is where risk and return show up in a real way.
+
+Before getting into specific investments, it helps to establish a baseline. If you do nothing ambitious with your money, you can usually earn a small, relatively stable return by keeping it in a high-yield savings account or something very similar. That return is not exciting, but it is predictable. Every investment choice you make should be mentally compared against that baseline. If something carries more risk than a savings account, it should reasonably be expected to do better over time.
+
+With that in mind, here are the most common ways people invest their money.
+
+---
+
+### Cash Equivalents
+
+Cash equivalents are investments that are meant to behave a lot like cash. This category includes high-yield savings accounts and money market funds.
+
+The goal here is stability, not growth. These options typically offer modest returns that move with interest rates and come with very low risk. You should not expect dramatic gains, but you should also not expect large swings in value.
+
+Because of that, cash equivalents are well suited for money you need to be reliable. Emergency funds, short-term savings, and money you expect to spend in the near future generally belong here. Over long periods of time, though, cash equivalents usually do not grow fast enough to build meaningful wealth.
+
+A good rule of thumb is cash equivalents grow slightly above inflation, often between 3 and 5%. 
+
+---
+
+### Individual Stocks
+
+Buying individual stocks means owning shares of specific companies.
+
+This is the most familiar form of investing for many people, and often the most tempting. It’s easy to imagine finding a great company early and watching it grow. That does happen. It’s just much harder to do consistently than it looks.
+
+Individual stocks come with a wide range of outcomes. Some perform extremely well. Many do not. A single company can stagnate, decline, or fail outright. Because you are concentrating your money in a small number of businesses, there is very little protection against being wrong.
+
+For most people, especially early on, this level of risk is unnecessary. That doesn’t mean individual stocks are always a bad idea. It does mean they require a clear understanding of the risks involved and a willingness to accept large swings in value. I would love to give an estimate on how much individual stocks typically return, but it’s such a highly volatile asset that anything I write down is sure to be proven wrong. 
+
+---
+
+### Index Funds
+
+Index funds are one of the simplest and most reliable ways to invest.
+
+An index fund owns a broad collection of companies and is designed to track the performance of a market index, such as the S&P 500. Instead of trying to pick winners, you are betting on the overall growth of the market.
+
+Compared to cash equivalents, index funds are much more volatile. Compared to individual stocks though, they are much more tame.  The value of index funds will go up and down, sometimes sharply. Over long periods of time, though, broad market index funds have historically delivered much higher returns than savings accounts. The tradeoff is patience. Short-term volatility is the price paid for long-term growth.
+
+Thankfully, we do have a bit of data on index funds - most important of which is the S&P 500.  On average, the S&P 500 grows between 8 and 10% per year.  That doesn’t mean there aren’t negative growth years just as much as it doesn’t mean it can’t grow by 30%.  But on average, the growth is well above cash equivalents. 
+
+That’s the case for the most popular index funds, but there are plenty of index funds out there that are not all necessarily doing the same thing.  Index funds are built around different risk profiles and may vary in how much risk tolerance they have.  Those that are more risk tolerant will have higher than average returns.  Those that are risk averse will typically be lower returns.  
+
+You will also encounter funds that try to beat the market by actively picking stocks. These are often called managed or actively managed funds. While some succeed for a time, most struggle to outperform simple index funds once fees are taken into account. For many investors, especially those just getting started, simplicity tends to win. The advantage of managed funds
+
+
+---
+
+### Target-Date Funds
+
+Target-date funds are designed to be an all-in-one investment.
+
+You choose a target year, usually around when you expect to retire, and the fund handles the rest. Early on, it holds more stock-based investments. As the target date approaches, it gradually shifts toward more conservative assets.
+
+Early in their life, target-date funds behave similarly to stock-heavy index funds. Over time, they become less volatile, trading some potential return for stability. These funds are popular in retirement accounts because they remove the need to actively manage allocations.
+
+The tradeoff is control. You are outsourcing decisions about risk and asset mix in exchange for convenience. For many people, that is a reasonable deal.
+
+---
+
+### Putting it together
+
+Every investment choice can be thought of as a step away from the savings account baseline.
+
+Cash equivalents prioritize stability over growth. Individual stocks offer the possibility of high returns, but with large and unpredictable risk. Index funds trade short-term volatility for long-term market growth. Target-date funds trade control for simplicity.
+
+There is no single correct investment for everyone. The right choice depends on how long the money will be invested, how comfortable you are with uncertainty, and what role that money plays in your broader financial plan.
+
+—-
+
+## Debt
+
+Debt is worth talking about separately because it behaves very differently from the other things we’ve discussed so far.
+
+Most investment assets are designed to grow your money over time. Debt does the opposite. Left alone, it quietly drains money away through interest payments. For that reason, debt is often described as the opposite of an asset.
+
+At the same time, paying down debt can still be thought of as an investment. When you put money toward a loan balance, you are reducing future interest payments. That reduction is real, measurable, and permanent. In that sense, paying down debt increases your net worth just like an investment would, even though it doesn’t feel the same. Put a different way, investing in assets makes your net worth go up faster, while debt makes your net worth go down slower.  Both have the same effect.  
+
+A simple example helps make this concrete. Suppose you have a car loan charging 11% interest. You also have the option to invest extra money in the stock market, where you might reasonably expect something like a long-term average return slight below that range. Paying down the car loan is effectively a guaranteed 11% return. Investing in the market might do better, or it might do worse. The debt payoff is certain whereas the market is a risk.  Once you look at it this way, debt starts to fit naturally into the same framework we’ve been using for everything else.
+
+From a risk perspective, paying down debt is unusually clean. There is no uncertainty about the outcome. You know exactly what interest rate you are avoiding, and you get that benefit immediately. There is no volatility and no downside surprise. Liquidity is the obvious drawback. Money used to pay down debt is gone. You can’t pull it back out if circumstances change. That lack of flexibility is real and needs to be weighed against the certainty of the return. Similarly, from a tax perspective, debt paydown is simple. There are no taxes on the “gains.” You are not earning income, you are avoiding a cost. The return you get from eliminating interest is not taxed. Finally, the return itself is fixed and known. Some debts have small interest rates. Others are painfully large. A 3% mortgage behaves very differently from a 20% credit card balance.
+
+All of this leads to an important conclusion. Debt is not automatically bad, but it should be used deliberately. Some debt can be useful. It can help smooth large, necessary expenses over time. It can allow you to buy a home, get an education, or solve real problems before you have the cash on hand. Used carefully, debt can extend your financial capabilities in reasonable ways.
+
+On the other hand, a lot of debt is destructive. High-interest consumer debt, especially debt taken on to support ongoing lifestyle choices, works against every other financial goal. It quietly eats away at future flexibility and makes everything else harder. In those cases, debt becomes a crutch rather than a tool. A large part of sound financial planning is getting rid of bad debt and avoiding it in the first place. The goal is not to eliminate every dollar of debt at all costs, but to make sure that any debt you carry serves a clear purpose and has a well-understood tradeoff.
+
+
+
+
+## The Layman’s Playbook
+
+By this point, we’ve talked about accounts, investments, liquidity, taxes, and debt. The purpose of this section is to turn all of that into something actionable.
+
+This playbook is not meant to be perfectly optimal for every situation. Depending on your income, debt, age, risk tolerance, and employment status, the exact best strategy may look a little different. That’s fine. The goal here is not perfection. The goal is a solid starting point that balances returns, risk, liquidity, and taxes in a way that works for most people.
+
+If you understand the sections above, this playbook should feel reasonable and unsurprising.
+
+---
+
+### Phase 1: Don’t Blow Yourself Up
+
+This phase is about protecting yourself from irreversible mistakes. Most of the rules in this guide prioritize liquidity and flexibility early on, but there is one intentional exception.
+
+#### Max out your employer’s 401(k) match
+
+This step breaks our usual ordering, and it does so on purpose.
+
+Under normal circumstances, money should stay liquid early on. You want flexibility, especially before you have a strong financial foundation. The employer match is not exactly that, but trust me it’s for good reason.  
+
+If your employer offers a match, contributing enough to receive it is effectively a guaranteed return. In many cases, the return is close to 100%. There are very few opportunities in personal finance that compare to that. This benefit is also time-limited. If you skip it this year, you cannot go back and claim it later. That makes missing the match a permanent loss, not a temporary setback. For that reason, even if the rest of your finances are not perfectly in order, capturing the full employer match is usually worth doing first.
+
+As far as what to invest in, target funds are a perfectly fine choice.  They intend to mirror your needs as far as risk goes anyways, so it’s best to just go with simplicity here.  
+
+#### Get rid of bad debt
+
+Once the match is captured, the next priority is removing anything that is actively working against you. High-interest debt produces a guaranteed negative return. Paying it down is equivalent to earning a fixed, risk-free return equal to the interest rate. If that rate is meaningfully high, the math is straightforward. The debt has got to go. This is especially true for consumer debt taken on to support lifestyle choices. That kind of debt quietly drains future flexibility and makes every other financial decision harder.
+
+#### Build a 6-month emergency fund
+
+After bad debt is under control, the focus in our playbook shifts to preventing it from coming back. An emergency fund exists so that when something goes wrong, your only option is not high-interest debt. Job loss, medical expenses, car repairs, and family emergencies happen whether you plan for them or not. If you lacked emergency funds, you’d be forced to take on more bad debt, further hindering your financial position.  Although this step does not directly contribute to raising your net worth, it prevents it from being hammered by more bad debt which achieves the same effect.  
+
+This money should live somewhere boring and liquid. A high-yield savings account or similar cash-like option is the right place. We don’t care if it makes a ton of money just sitting around, all that matters is that it’s available to you when you would have otherwise needed more expensive options.  Lastly, six months is a common rule of thumb. The exact number matters less than the idea that you can absorb a real shock without scrambling.
+Completing phase 1 can be thought of as the bare minimum for a financial plan.  If you’re not able to get to phase 2 at some point, you may find it difficult to even retire.  
+
+### Phase 2: Build for the Future
+
+With stability in place and free returns captured, you can start focusing on longer-term growth and flexibility. 
+
+#### Start small with brokerage investing in risk tolerant index funds
+
+You might be surprised that the first recommendation in phase 2 is to put money in non-tax advantaged accounts.  After all, putting this same money into an employer 401(k) would probably do just as good if not better even after the match is met.  However, life does not begin at retirement. Things will happen to you between now and age 59.5.  You will want the flexibility of having some excess liquid able funds lying around. 
+
+Putting a small amount of money into a brokerage account early serves two purposes. First, it builds flexibility for non-retirement goals. Second, it helps you get comfortable with investing while the stakes are still low. This money can eventually be used for things like a new car, a home upgrade, education expenses, or other large life events. Keeping some money outside of retirement accounts makes those decisions easier later. 
+
+Since you don’t need this money right away, you can afford to a little risky with it.  Rather than have it sitting in some cash equivalent, put it towards some index funds (e.g. S&P 500) and let it sit for some years.  You’ll likely average that 8-10% return range and have some spending money when the time is right.  
+
+The key here is moderation. This is not about diverting everything away from retirement. It’s about acknowledging that liquidity has value.
+
+#### Increase retirement contributions (traditional or Roth)
+
+After the match is captured, additional retirement saving is still a good idea. If you are young, a lot could happen to the economy between now and when you retire.  Doing the bare minimum on what is seen as “good advice” today may leave you in hot water 10 years from now.  If you have the opportunity to cushion your retirement, you should absolutely plan to do so.  
+
+If your employer offers additional retirement options, it often makes sense to use them first because contribution limits are higher. If not, an individual IRA fills the same role, with lower limits. At this stage, the choice between traditional and Roth matters more, but it still doesn’t need to be perfect. A common heuristic is to lean Roth earlier in your career and traditional later, as income and tax rates rise. The goal is consistent, tax-advantaged saving, not flawless tax prediction.
+
+Getting to the point that you can complete phase 2 is a comfortable place to be.  You have above minimum retirement plans, extra spending money for life enhancing events, and actually get to see your assets grow exponentially.  
+
+### Phase 3: Aggressive growth
+
+Phase 3 is where most opportunities become viable candidates and the investment world really opens up.  This phase features aggressive assets and maximum net worth optimizing strategies.  
+
+#### Invest remaining savings in brokerage accounts
+
+If you’ve handled debt, built an emergency fund, captured employer benefits, and are contributing meaningfully toward retirement, any remaining funds can be aggressively invested in highly volatile, high expected return asset options.  I would still personally stick to index funds here, but the aggressive, cushioned investor may feel comfortable looking at individual stocks at this point.  
+
+This money is primarily to continue to build a retirement safety net as well as open the doors for early retirement.  It also protects you from major mistakes or serious financial crises. At this stage, optimized portfolios through the help of professionals are worthwhile to consider.  
+
+Going beyond the guide
+`;
+
+    const target = document.getElementById('markdown-target');
+    target.innerHTML = marked.parse(markdownSource.trim());
+  </script>
+
+</body>
+
+</html>

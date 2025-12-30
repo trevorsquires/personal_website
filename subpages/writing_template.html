@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Writing Template</title>
+  <meta content="Drop-in template for publishing a Markdown-based writing on this site." name="description">
+  <meta content="writing, markdown, article, template" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <style>
+    /* Minimal Markdown-friendly defaults for the writing area */
+    .markdown-body {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #2c2c2c;
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5,
+    .markdown-body h6 {
+      font-weight: 700;
+      margin-top: 1.8rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .markdown-body p {
+      margin-bottom: 1.1rem;
+    }
+
+    .markdown-body a {
+      color: #106eea;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(16, 110, 234, 0.25);
+    }
+
+    .markdown-body a:hover {
+      color: #0a4ca3;
+      border-bottom-color: rgba(10, 76, 163, 0.35);
+    }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .markdown-body blockquote {
+      border-left: 4px solid #e0e6ed;
+      padding-left: 1rem;
+      color: #555;
+      margin: 1.4rem 0;
+    }
+
+    .markdown-body code {
+      background: #f4f6f9;
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    .markdown-body pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1.2rem 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+          <li><a href="../content.html">Content</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <a href="https://github.com/trevorsquires" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/trevor-squires-734625116/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:trevorsquires9@gmail.com"><i class="bi bi-mailbox"></i></a>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main id="main" class="detail-page">
+    <section class="detail-hero" data-aos="fade-up">
+      <div class="container">
+        <div class="detail-top-row">
+          <a class="detail-back" href="../content.html"><i class="bi bi-arrow-left"></i><span>Back to Content</span></a>
+        </div>
+        <h1>Writing Title</h1>
+        <p class="detail-lede">A short subtitle or teaser for the writing. Replace this text with your own.</p>
+      </div>
+    </section>
+
+    <section class="detail-body">
+      <div class="container">
+        <div class="row justify-content-center gy-4">
+          <div class="col-lg-10 col-xl-9" data-aos="fade-up">
+            <div class="detail-card">
+              <div id="markdown-target" class="markdown-body">
+                <!-- Markdown content will be rendered here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Markdown renderer -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    // Replace the markdownSource string with your writing in Markdown.
+    const markdownSource = `
+# Example: Replace this with your Markdown
+
+This template renders Markdown directly on-page using **marked.js**.
+
+- Update the title and lede text above.
+- Keep writing in Markdown here.
+- Images: \`![Alt text](../assets/img/example.png)\`
+
+> Tip: leave this page in the repo as a template and duplicate it for each new writing.
+`;
+
+    const target = document.getElementById('markdown-target');
+    target.innerHTML = marked.parse(markdownSource.trim());
+  </script>
+
+</body>
+
+</html>
